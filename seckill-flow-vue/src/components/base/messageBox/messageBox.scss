@@ -1,0 +1,68 @@
+.v-modal {
+    background: rgba(0, 0, 0, .3) !important;
+}
+
+.el-message-box.ui-message-box {
+    border-color: #f2f2f2;
+    border-radius: 0;
+    padding: 20px;
+    width: 400px;
+    box-sizing: border-box;
+    .el-message-box__header {
+        padding: 0;
+        font-size: 16px;
+        color: #333;
+        font-weight: bold;
+        .el-message-box__headerbtn {
+            top: 0;
+            right: 0;
+        }
+    }
+    .el-message-box__content {
+        padding: 25px 0 0;
+        .el-message-box__status {
+            &.el-icon-warning {
+                color: red;
+            }
+        }
+        .el-message-box__input {
+            padding: 0;
+            .el-input__inner {
+                border-radius: 0;
+                border-color: #EAEAEA;
+            }
+        }
+    }
+    .el-message-box__btns {
+        padding: 20px 0 0;
+        .el-button {
+            border-radius: 0;
+            padding-left: 26px;
+            padding-right: 26px;
+            &.confirm-button {
+                @extend .background-color !optional;
+                @extend .border-color-background !optional;
+            }
+            &.cancel-button {
+                background-color: #fff;
+                @extend .border-color-background !optional;
+                @extend .font-color-background !optional;
+            }
+        }
+    }
+}
+
+.ui-notification.el-notification {
+    padding: 10px;
+    border-radius: 2px;
+    .el-notification__group {
+        margin: 0;
+        margin-left: 10px;
+        .el-notification__title {
+            font-size: 14px;
+        }
+        .el-notification__content {
+            font-size: 13px;
+        }
+    }
+}
